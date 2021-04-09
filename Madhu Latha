@@ -1,0 +1,66 @@
+
+1.	//IfElseDemo.java
+
+	import java.util.Scanner;
+
+	class IfElseDemo
+	{
+		public static void main(String args[])
+		{
+			int num;
+			Scanner sc = new Scanner(System.in);
+
+			System.out.print("\n\tEnter any number : ");
+			num = Integer.parseInt(sc.nextLine());
+
+			if(num>0)
+				System.out.print("\n\t" + num + " is Positive.");
+			else
+				System.out.print("\n\t" + num + " is Negative.");
+		}
+	}
+
+2.
+import java.util.Scanner;
+
+public class KboatSpectrum
+{
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("VIBGYOR Spectrum");
+        System.out.println("Enter your colour choice: ");
+        char choice = in.next().charAt(0);
+        switch (choice) {
+            case 'V':
+                System.out.println("Violet");
+                break;
+                
+            case 'I':
+                System.out.println("Indigo");
+                break;
+                
+            case 'B':
+                System.out.println("Blue");
+                break;
+                
+           case 'G':
+                System.out.println("Green");
+                break;
+                
+           case 'Y':
+                System.out.println("Yellow");
+                break;
+                
+           case 'O':
+                System.out.println("Orange");
+                break;
+                
+           case 'R':
+                System.out.println("Red");
+                break;
+                
+           default:
+                System.out.println("Incorrect choice");
+        }
+    }
+}
